@@ -1,0 +1,64 @@
+
+COMANDOS GIT subir  a la nube o al repositorio:
+
+-para iniciar git sobre un proyecto (es de uso unico sobre ese proyecto):
+   * git init
+
+-vincular un repositorio local (en pc) con un remoto (intenet o servidor):
+  * git remote add origin AQUI LA URL DEL REPOSITORIO
+- para comprobar que estamos vinculados:
+ *git remote -v
+
+-El comando de git status nos da toda la información necesaria sobre la rama actual:
+  * git status
+  	**Si hay archivos en preparación (staged), sin preparación(unstaged) o que no están
+	     recibiendo seguimiento (untracked)
+
+-Añadir un único archivo:
+  *git add AQUI NOMBRE DEL ARCHIVO
+
+-Añadir todo de una vez: para agregar todo
+  *git add .           
+
+-Hacemos un commit para guardar nuestro archivo y le ponemos un mensaje que explique que hemos
+hecho.
+  * git commit -m "AQUI EL MENSAJE DE GUARDADO DE ESTE PUNTO"
+
+-Enviar cambios al repositorio remoto: GIT PUSH
+  *git push  <AQUI NOMBREDEL REPOSITORIO REMOTO> <AQUI NOMBRE DE TU RAMA>
+  	git push origin master
+	**De nombre remoto usualmente vamos a poner la palabra origin
+	pues origin es simplemente el nombre
+	predeterminado o alias que recibe el repositorio remoto principal contra el que trabajamos.
+	Cuando clonamos o creamos un repositorio por primera vez desde GitHub o cualquier otro
+	sistema remoto, el nombre que se le da a ese repositorio es precisamente origin.
+	Básicamente origin es el alias que se le da a la url del repositorio remoto, nosotros en vez de
+	poner push, más, el url del repositorio remoto al que queremos pushear, usamos el alias origin
+	para especificarle que tiene que pushear a ese repositorio remoto concreto.
+	**Cuando creamos un repositorio en GitHub, nos crea una rama por defecto llamada main, que será
+	a la rama que tendremos que pushear.
+	Por lo que ahora haremos el siguiente comando en nuestra terminal:
+   -QUEDARIA ENTONCES ASI 
+	*git push origin master
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+COMANDOS GIT clonar o bajar de la nube o del repositorio:
+- inicializamos git 
+*git init
+
+-agregamos el repositorio de forma local:
+* git remote add origin AQUI LA URL DEL SITIO
+
+-confirmamos que bajamos la url:
+* git remote -v
+
+-traemos la informacion: 
+*git pull origin master
+
+- si queremos traer todas las ramas:
+* git fetch
+
+- nos paramos en el archivo que deseamos con:
+git chekout AQUI NOMBRE DEL ARCHIVO
+
+- a partir de aqui ya podemos generar la rama de trabajo que deseamos

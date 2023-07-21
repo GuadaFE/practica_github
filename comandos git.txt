@@ -1,0 +1,63 @@
+* git init -> nos permite inicializar repositorio de forma local.
+*git status -> nos permite ver los cambios que se produjeron y ver que queremos commitear o añadir
+*git remote -> nos permite añadir 
+*git remote -v  -> ver la version
+*git diff -> nos permite ver las diferencias entre un commit anterior y el actual
+*git push -> para empujar (enviar el archivo a la nube)
+*git pull -> para traer (bajar la informacion o archivo de la nube)
+*git chekout -> es bastante ambiguo, nos permite saltar entre ramas, saltar entre versiones o descartar cosas
+ 	*git checkout NOMBRE-RAMA -> nos envia a la rama nombrada
+	*git checkout CODIGO-COMMIT -> volvemos en el tiempo al commit solicitado	
+*git log -> nos permite ver el historial
+* q -> salimos de algun cierre en la consola
+*git commit -m "MENSAJE DEL COMMIT" -> guardamos cambios
+*git clone URL DEL REPOSITORIO -> clonar un repositorio
+
+*rm -rf .git // esto eliminará todo lo relacionado a tu repositorio git
+---------------------
+COMANDOS DE CONFIGURACION GLOBAL
+*git config --global user.name "NOMBRE-USUARIO"  
+*git config --global email "email@email.com"
+*git config -l  -> comando para ver la configuracion general.
+*git help -> nos muestra que hace cada comando
+
+
+GitHub Egg: https://github.com/EggCooperation
+
+
+PRIMER EJERCICIO
+1) Tendremos que crear desde GitHub un repositorio SIN ARCHIVO README y copiar la URL
+directa hacia el repositorio.
+2) Crear una carpeta que contenga un archivo .txt con un mensaje inicial
+3) Recordar que deberemos inicializar el repositorio haciendo click derecho sobre la carpeta
+que contiene el archivo y abrir Git . O también podremos hacer click derecho en un lugar
+en blanco al costado del archivo .txt. Inicializar el repositorio con:
+4) git init
+5) Vincular y conectar nuestro repositorio local con el remoto usando:
+6) git remote add origin URL
+7) Luego controlo los cambios que están bajo observación en la rama principal con:
+8) git status
+9) Luego añado los cambios de todos los archivos con:
+10) git add .
+11) Luego comiteo los cambios con:
+12) git commit –m “Mensaje”
+13) Y finalmente hago un git push origin para mandar mis cambios al repositorio remoto
+14) Podría cambiar el mensaje del .txt y repetir los pasos desde el 2 al 10 y debería ver en la
+página de git mis cambios
+
+SEGUNDO EJERCICIO
+1) Tendremos que pedirle un repositorio publico a algún estudiante de nuestro curso.
+2) Copiaremos la URL principal del repositorio del estudiante
+3) Tendremos que abrir Git en alguna carpeta y correr el comando git clone
+URL_ESTUDIANTE
+
+
+
+¿QUE ES GIT?
+Git es un sistema de reversionamiento de los proyectos, es decir, nos permite manejar varias versiones de nuestro proyecto dandonos acceso
+a dicho proyecto y sus modificaciones o cambios a través del tiempo.
+Con cada commit que yo haga en mi proyecto, estoy generando un punto en la linea de tiempo de mi proyecto. 
+
+
+
+
