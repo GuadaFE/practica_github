@@ -1,6 +1,7 @@
 # practica_github
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Guada
 =======
 Romina Figueroa
@@ -8,3 +9,6 @@ Romina Figueroa
 =======
 Guada
 >>>>>>> master
+=======
+Franko rasia
+>>>>>>> origin/master
